@@ -16,7 +16,7 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/kevinshah19/',
     leetcode: 'https://leetcode.com/u/kevinshah966/',
     email: 'kevinshah966@gmail.com',
-    resume: '#', // TODO: add resume URL
+    resume: 'https://drive.google.com/file/d/1T6CClyXUMuHeO0dUgE399OcFK3qppABa/view?usp=sharing',
   },
 }
 
