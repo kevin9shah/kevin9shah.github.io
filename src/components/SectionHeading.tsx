@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import PSGlyph from './PSGlyph'
 
 interface SectionHeadingProps {
   number?: string
@@ -14,7 +15,7 @@ export default function SectionHeading({ number, label, title, subtitle, align =
       {label && (
         <p className={`eyebrow mb-4 flex items-center gap-2.5 ${align === 'center' ? 'justify-center' : ''}`}>
           {number && <span className="text-muted">{number}</span>}
-          {number && <span className="text-line">—</span>}
+          {number && <PSGlyph index={parseInt(number, 10) - 1} size={10} />}
           {label}
         </p>
       )}

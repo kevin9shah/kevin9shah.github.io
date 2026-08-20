@@ -1,6 +1,7 @@
-import { Mail, Github, Linkedin, Code2, ArrowRight, MapPin } from 'lucide-react'
+import { Mail, Github, Linkedin, ArrowRight, MapPin } from 'lucide-react'
 import Reveal from './Reveal'
 import { profile } from '../data/content'
+import LeetCodeIcon from './LeetCodeIcon'
 
 export default function Contact() {
   return (
@@ -40,7 +41,7 @@ export default function Contact() {
                 {[
                   { icon: Github, href: profile.links.github, label: 'GitHub' },
                   { icon: Linkedin, href: profile.links.linkedin, label: 'LinkedIn' },
-                  { icon: Code2, href: profile.links.leetcode, label: 'LeetCode' },
+                  { icon: LeetCodeIcon, href: profile.links.leetcode, label: 'LeetCode' },
                   { icon: Mail, href: `mailto:${profile.links.email}`, label: 'Email' },
                 ].map(({ icon: Icon, href, label }) => (
                   <a

@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { profile } from '../data/content'
+import PSGlyph from './PSGlyph'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -25,7 +26,12 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <p className="mt-6 text-center font-mono text-[11px] text-muted/50">Built with curiosity &amp; code.</p>
+      <div className="mt-6 flex items-center justify-center gap-2.5">
+        {[0, 1, 2, 3].map((i) => (
+          <PSGlyph key={i} index={i} size={11} />
+        ))}
+      </div>
+      <p className="mt-2 text-center font-mono text-[11px] text-muted/50">Built with curiosity &amp; code.</p>
     </footer>
   )
 }

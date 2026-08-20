@@ -8,7 +8,7 @@ export default function Research() {
     <section id="research" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          number="04"
+          number="05"
           label="Research"
           title="Research & Innovation"
           subtitle="Applying machine learning and data-driven systems to real-world problems."

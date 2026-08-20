@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Github, Linkedin, Mail, Code2 } from 'lucide-react'
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 import { profile } from '../data/content'
 import kevinPhoto from '../assets/kevin-photo.jpg'
+import CyberConsole3D from './CyberConsole3D'
+import LeetCodeIcon from './LeetCodeIcon'
 
 export default function Hero() {
   return (
@@ -9,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0 grid-bg [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,black,transparent)]" />
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 h-[28rem] w-[28rem] rounded-full bg-cyan/[0.06] blur-[130px]" />
 
-      <div className="relative mx-auto max-w-6xl px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -87,7 +89,7 @@ export default function Hero() {
             {[
               { icon: Github, href: profile.links.github, label: 'GitHub' },
               { icon: Linkedin, href: profile.links.linkedin, label: 'LinkedIn' },
-              { icon: Code2, href: profile.links.leetcode, label: 'LeetCode' },
+              { icon: LeetCodeIcon, href: profile.links.leetcode, label: 'LeetCode' },
               { icon: Mail, href: `mailto:${profile.links.email}`, label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <a
@@ -104,13 +106,14 @@ export default function Hero() {
           </motion.div>
         </div>
 
+        {/* Right: Profile Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="relative w-full max-w-sm mx-auto"
         >
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-surface">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-line bg-surface glow-cyan">
             <img src={kevinPhoto} alt="Kevin Shah" className="h-full w-full object-cover object-top" />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/5 to-transparent" />
 
@@ -130,6 +133,17 @@ export default function Hero() {
               </span>
             </div>
           </div>
+        </motion.div>
+
+        {/* Interactive 3D Cyberpunk Gaming Console Launcher — spans the full row width
+            beneath text+photo instead of sitting narrow in one column with dead space beside it */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="lg:col-span-2 mt-4"
+        >
+          <CyberConsole3D />
         </motion.div>
       </div>
     </section>

@@ -21,9 +21,9 @@ export default function App() {
         <Focus />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Research />
-        <Experience />
         <Achievements />
         <Awaaz />
         <Leadership />

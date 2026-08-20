@@ -1,5 +1,6 @@
 import SectionHeading from './SectionHeading'
 import Reveal from './Reveal'
+import PSGlyph from './PSGlyph'
 import { skillCategories } from '../data/content'
 
 export default function Skills() {
@@ -24,7 +25,7 @@ export default function Skills() {
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2.5">
-                    <span className={`h-1.5 w-1.5 rounded-full ${i % 2 === 0 ? 'bg-cyan' : 'bg-emerald'}`} />
+                    <PSGlyph index={i} size={9} />
                     <span className="font-mono text-[11px] tracking-[0.15em] text-muted uppercase">// {cat.tag}</span>
                   </div>
                   <span className="font-mono text-[11px] text-muted/60 tabular-nums">

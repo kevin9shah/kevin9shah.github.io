@@ -13,7 +13,7 @@ export default function Projects() {
     <section id="projects" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          number="03"
+          number="04"
           label="Projects"
           title="Selected Work"
           subtitle="Engineering projects focused on AI, data and scalable backend systems."

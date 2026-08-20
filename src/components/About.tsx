@@ -38,7 +38,7 @@ export default function About() {
                   <li key={item.org} className="relative">
                     <span
                       className="absolute -left-[32px] top-1 h-2 w-2 rounded-full border-2 border-ink"
-                      style={{ background: i % 2 === 0 ? '#06b6d4' : '#10b981' }}
+                      style={{ background: i % 2 === 0 ? '#6366f1' : '#22c55e' }}
                     />
                     <p className="font-display font-semibold text-text">{item.org}</p>
                     <p className="text-sm text-muted mt-0.5">{item.role}</p>

@@ -5,8 +5,11 @@
   --color-surface: #111827;
   --color-surface-hi: #151d2f;
   --color-line: #1f2937;
-  --color-cyan: #06b6d4;
-  --color-emerald: #10b981;
+  /* PS1-inspired dark palette: indigo/blue echoes the classic PlayStation logo blue
+     (and the ✕ face-button), green echoes the △ face-button — both already used as
+     the console's own accent lights, so the whole site now reads as one system. */
+  --color-cyan: #6366f1;
+  --color-emerald: #22c55e;
   --color-text: #f3f4f6;
   --color-muted: #94a3b8;
 
@@ -71,18 +74,18 @@
   }
 
   .text-gradient {
-    background: linear-gradient(120deg, #f3f4f6 20%, #06b6d4 55%, #10b981 85%);
+    background: linear-gradient(120deg, #f3f4f6 20%, #6366f1 55%, #22c55e 85%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
   .glow-cyan {
-    box-shadow: 0 0 0 1px rgba(6, 182, 212, 0.2), 0 0 24px -10px rgba(6, 182, 212, 0.35);
+    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.25), 0 0 24px -10px rgba(99, 102, 241, 0.4);
   }
 
   .glow-emerald {
-    box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.2), 0 0 24px -10px rgba(16, 185, 129, 0.35);
+    box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.2), 0 0 24px -10px rgba(34, 197, 94, 0.35);
   }
 
   .eyebrow {
@@ -107,13 +110,13 @@
     padding: 1px;
     background: conic-gradient(
       from var(--rainbow-angle, 0deg),
-      #06b6d4,
-      #10b981,
+      #6366f1,
+      #22c55e,
       #a3e635,
       #f59e0b,
       #f43f5e,
       #a855f7,
-      #06b6d4
+      #6366f1
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
