@@ -172,7 +172,7 @@ export const projects: Project[] = [
     highlights: ['Environmental factor analysis', 'Random Forest', 'SHAP', 'Explainable AI', 'Crop recommendation'],
     architecture: [],
     metric: { value: '0.9974', label: 'R²' },
-    demo: '#', // TODO: add IEEE Xplore paper URL
+    demo: 'https://ieeexplore.ieee.org/document/11441103/',
     demoLabel: 'Read Research →',
   },
 ]
@@ -182,7 +182,7 @@ export const research = {
   badge: 'IEEE Xplore • ICAUC 2026',
   metric: '0.9974 R²',
   points: ['Environmental factor analysis', 'Random Forest', 'SHAP', 'Explainable AI', 'Crop recommendation'],
-  url: '#', // TODO: add IEEE Xplore paper URL
+  url: 'https://ieeexplore.ieee.org/document/11441103/',
 }
 
 export interface Patent {
